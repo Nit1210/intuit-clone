@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="Styles.css">
+    <title>Intuit clone</title>
+</head>
+<body>
+    <header>
+        <h1> Intuit Sale 70% off</h1>
+    </header>
+    <section class="banner">
+        <img src="timesheet.jpg" style="width:100%" alt="intuit image">
+        <div class="container Welcome"> 
+            <h1>Tools to help your business thrive <br></h1>
+            <p> your business with software for accounting, payroll and more. Connect with experts for help staying organized and getting ready for tax time.</p>
+        </div>
+    </section>
+   <nav class="main-nav">
+    <ul>
+        <li>Data Inception</li>
+        <li><a href="/News.html">Register</a></li>
+        <li><a href="/Games.html">Login</a></li>
+        <li> <a href="/Conact.html">Contact</a></li>
+    </ul>
+   </nav>
+<main>
+    <article>
+        <h2>Explanation</h2>
+        <h3>theme and moto </h3>
+        <p>One day the kingdom of the peaceful mushroom people was invaded by the Koopa, a tribe of turtles famous for their black magic. The quiet, peace-loving Mushroom People were turned into mere stones, bricks and even field horsehair plants, and the Mushroom Kingdom fell into ruin.
+            
+            The only one who can undo the magic spell on the Mushroom People and return them to their normal selves is the Princess Toadstool, the daughter of the Mushroom King. Unfortunately, she is presently in the hands of Bowser, the King of the Koopa.
+            
+            Mario hears about the Mushroom People’s plight and sets out on a quest to free the Mushroom Princess from the evil Koopa and restore the fallen kingdom of the Mushroom People.
+            
+            You are Mario! It’s up to you to save the Mushroom People from the black magic of the Koopa!</p>
+    </article>
+    <div class="container-fluid">
+        <h1 class="flex display-5 md-1">Pick Your Plan Based on Number Of Users</h1>
+        <div class="row pricing-tags">
+    
+            <!-- Card for Below 5 users -->
+            <div class="col-md-4" style="padding:20px;">
+                <div class="card pricing-tag" style="background-color: rgb(245, 245, 245);width: 18rem;z-index:-1;">
+                    <div class="card-body text-center" >
+                        <h5 class="card-title ">Below 5 users</h5>
+                        <h6 class="card-subtitle mb-2 "style="color:rgb(171, 79, 237); font-size: 30px;">$10.99</h6>
+                        <p class="card-text">Per user per month</p>
+                        <ul style="list-style-type: none;">
+                            <li style="padding: 3px;">Unlimited Projects and Tasks</li>
+                            <li style="padding: 3px;">Unlimited Clients and Users</li>
+                            <li style="padding: 3px;">Weekly Reports and Analytics</li>
+                            <li style="padding: 3px;">24/7 Email Support</li>
+                        </ul>
+                        <button class="btn  buy-btn" style="background-color: rgb(171, 79, 237);color:white; border-radius:20px;"onclick="selectPlan(this); showMessage();" data-plan="Below 5 Users">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card for Above 5 users -->
+            <div class="col-md-4" style="padding:20px;">
+                <div class="card pricing-tag " style="background-color: rgb(245, 245, 245);width: 18rem;z-index:-1;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title ">Above 5 users</h5>
+                        <h6 class="card-subtitle mb-2 " style="color:rgb(171, 79, 237); font-size: 30px;">$5.99</h6>
+                        <p class="card-text">Per user per month</p>
+                        <ul style="list-style-type: none;">
+                            <li style="padding: 3px;">Unlimited Projects and Tasks</li>
+                            <li style="padding: 3px;">Unlimited Clients and Users</li>
+                            <li style="padding: 3px;">Weekly Reports and Analytics</li>
+                            <li style="padding: 3px;">24/7 Email Support</li>
+                        </ul>
+                        <button class="btn  buy-btn" style="background-color: rgb(171, 79, 237);color:white; border-radius:20px;" onclick="selectPlan(this); showMessage();" data-plan="Above 5 Users">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card for Vendor plan -->
+            <div class="col-md-4" style="padding:20px;">
+                <div class="card pricing-tag" style="width: 18rem;background-color: rgb(245, 245, 245); z-index:-1;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title " style="font-size: 30px;">Vendor plan</h5>
+                        <h6 class="card-subtitle mb-2 " style=" color:rgb(171, 79, 237); font-size: 25px;">Contact us</h6>
+                        <p class="card-text ">Customizable</p>
+                        <ul style="list-style-type: none;">
+                            <li style="padding: 3px;" >Customized features and requirements</li>
+                            <li style="padding: 3px;">Flexible pricing options</li>
+                            <li style="padding: 3px;">Priority support</li>
+                        </ul>
+                        <button class="btn buy-btn " style="background-color: rgb(171, 79, 237);outline:none; border-radius:20px;" onclick="selectPlan(this); showMessage();" data-plan="Vendor Plan">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    <!-- <ul class="Images">
+        <li><img src="Image/thumb-1.png" alt="image1" </li>
+        <li><img src="Image/thumb-2.png" alt="image2" </li>
+    </ul> -->
+</main>
+<section class="join">
+    <h2>Register Today!</h2>
+    <ul style="list-style-type: none;">
+        <li><a href="/News.html">Register</a></li>
+        <li><a href="/Games.html">Login</a></li>
+        <li> <a href="/Conact.html">Contact</a></li>
+    </ul>
+    <form>
+        <input type="email" name="email" placeholder="Type your email : 'abcd@outlook.com' " required>
+    </form>
+</section>
+<footer>
+    <p class="copyright"> Copyright 2022</p>
+</footer>
+</body>
+
+
+</html>
