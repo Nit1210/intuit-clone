@@ -233,6 +233,7 @@ form input:invalid:hover{
     }
 
  }
+ 
  @media screen and (max-width:975px) {
     body{font-size: 41px;}
     nav.main-nav ul li.join{
@@ -245,20 +246,17 @@ form input:invalid:hover{
     div .row.pricing-tags{
         width: 100%;
     }
-        .card-body {
-            padding: 10px;
-            display: inline;
-            width: 100%;
-        }
-        
-        .card-titl.card-subtitle.card-text ul li {
-            font-size: 0.8em;
-        }
-        .btn {
-            font-size: 0.
+
     
-        }
     }
+    @media screen and  (max-width: 932px){
+        .col-md-4 {
+         width: 100%;
+         max-width: 50%;
+            /* max-width: 33.333333%; */
+    }
+}
+   
     @media screen and (max-width:860px) {
         body{font-size: 40px;}
         nav.main-nav ul li.join{
@@ -271,12 +269,21 @@ form input:invalid:hover{
         
         }
     }
+ 
     @media screen and (max-width:730px) {
         body{font-size: 35px;}
         nav.main-nav ul li.join{
-         width: 30%;   
+         width: 30%; 
+         
         }
     }
+    @media screen and  (max-width: 620px){
+        .col-md-4 {
+         width: 100%;
+        max-width: none;
+            /* max-width: 33.333333%; */
+    }
+}
     @media screen and (max-width:550px) {
         body{font-size: 30px;} 
          nav.main-nav ul li.join{
